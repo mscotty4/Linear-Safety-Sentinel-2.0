@@ -9,8 +9,12 @@ export default function Home() {
     <Card>
       <CardContent>
         <h1>Linear Safety Sentinel</h1>
-        <p>Paste a message, invite, or situation. Sentinel scans for risk.</p>
-        <Input value={text} onChange={e => setText(e.target.value)} placeholder="Paste your scenario here…" />
+        <p>Paste any message; Sentinel scans instantly.</p>
+        <Input
+          value={text}
+          onChange={e => setText(e.target.value)}
+          placeholder='Paste scenario here…'
+        />
         <Button onClick={() => alert('Scanning…')}>Scan</Button>
       </CardContent>
     </Card>
